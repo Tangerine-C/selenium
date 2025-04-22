@@ -13,7 +13,15 @@
                 </methods>
             </class>
 
-            <class name="testClasses.WatchlistTest"/>
+            <class name="testClasses.WatchlistTest">
+                <methods>
+                    <include name="openWatchlist"/>
+                    <include name="togglePublic"/>
+                    <include name="createList"/>
+                    <include name="editList"/>
+                    <include name="deleteList"/>
+                </methods>
+            </class>
 
             <class name="testClasses.MenuTest">
                 <methods>
@@ -25,13 +33,16 @@
                 </methods>
             </class>
 
-            <class name="testClasses.MoviesTest">
+            <class name="testClasses.PopularMovies">
                 <methods>
-                    <!-- Left empty intentionally -->
+                    <include name="openMenu"/>
+                    <include name="openPopularMovies"/>
+                    <include name="openMovie"/>
+                    <include name="openPhotosTab"/>
+                    <include name="closePhotoViewer"/>
+                    <include name="clickShareButton"/>
                 </methods>
             </class>
-
-            <class name="testClasses.PopularMovies"/>
 
             <class name="testClasses.TicketsTest">
                 <methods>
@@ -57,7 +68,7 @@
                 </methods>
             </class>
 
-            <class name="testClasses.ActorSearch">
+             <class name="testClasses.ActorSearch">
                 <methods>
                     <include name="searchAndOpenDenzelWashingtonProfile"/>
                     <include name="validateActorName"/>
@@ -74,3 +85,4 @@
         </classes>
     </test>
 </suite>
+
